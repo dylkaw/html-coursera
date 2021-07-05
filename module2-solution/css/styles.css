@@ -1,13 +1,56 @@
+*, *:before, *:after {
+    box-sizing: border-box
+}
+
+.container {
+    padding: 10px 5px 0px 5px;
+}
+
+.info-box {
+    text-align: left;
+    border-style: solid;
+    border-width: 1px;
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px 20px 10px 20px;
+    position: relative
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 175%
+}
+
+.section-title {
+    border-style: solid;
+    border-width: 1px;
+    width: 33.33%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: salmon;
+    text-align: center;
+    font-size: 125%
+}
+
 @media (min-width: 992px) {
-    .col-lg-4 {
+    .col-lg-4, .col-mg-12 {
         float: left;
-        width: 33%
+    }
+    .col-lg-4 {
+        width: 33.33%
+    }
+    .col-lg-12 {
+        width: 100%
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .col-mg-6, .col-mg-12 {
-        float: left
+        float: left;
     }
     .col-mg-6 {
         width: 50%
@@ -20,6 +63,6 @@
 @media (max-width: 767px) {
     .col-sg-12 {
         float: left;
-        width: 100%
+        width: 100%;
     }
 }
